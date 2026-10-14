@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Spencer Riley</title>
-<meta name="description" content="Spencer Riley, M.A. Marketing Management candidate at the University of St. Gallen (HSG). Brand positioning, customer research and competitive strategy.">
+<meta name="description" content="Spencer Riley grew up in Switzerland, studied in the United States and is now studying marketing at the University of St. Gallen (HSG).">
 <style>
   :root {
     --bg: #fbf8f1;
@@ -60,8 +60,7 @@
     padding: 0 20px;
   }
 
-  a:focus-visible,
-  summary:focus-visible {
+  a:focus-visible {
     outline: 3px solid var(--rule);
     outline-offset: 3px;
   }
@@ -108,7 +107,7 @@
   header {
     background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
     color: var(--navy-ink);
-    padding: 48px 0 76px;
+    padding: 48px 0 56px;
   }
 
   .monogram {
@@ -191,41 +190,6 @@
 
   .button:hover { opacity: 0.88; }
 
-  /* Key numbers, overlapping the hero */
-  .facts {
-    list-style: none;
-    margin: -44px 0 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .facts li {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-top: 3px solid var(--rule);
-    border-radius: 8px;
-    padding: 16px 12px;
-    text-align: center;
-    box-shadow: var(--shadow);
-  }
-
-  .facts strong {
-    display: block;
-    color: var(--accent);
-    font-size: 2rem;
-    line-height: 1.1;
-  }
-
-  .facts span {
-    display: block;
-    margin-top: 4px;
-    color: var(--muted);
-    font-size: 0.92rem;
-    line-height: 1.3;
-  }
-
   /* Sections */
   section {
     padding: 44px 0 0;
@@ -259,105 +223,29 @@
     box-shadow: var(--shadow);
   }
 
-  /* What I bring */
-  .grid3 {
+  .card p:last-child { margin: 0; }
+
+  .about { padding: 24px 22px; }
+
+  .about .opening {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  /* Stories */
+  .stories {
     display: grid;
     gap: 12px;
   }
 
-  .grid3 h3 {
+  .stories h3 {
     margin: 0 0 6px;
     font-size: 1.2rem;
+    line-height: 1.25;
     color: var(--accent);
   }
 
-  .grid3 p { margin: 0; }
-
-  /* Timeline (experience, education) */
-  .timeline {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .timeline > li {
-    position: relative;
-    padding: 0 0 26px 24px;
-    border-left: 2px solid var(--line);
-    margin-left: 6px;
-  }
-
-  .timeline > li:last-child { padding-bottom: 0; }
-
-  .timeline > li::before {
-    content: "";
-    position: absolute;
-    left: -8px;
-    top: 5px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--rule);
-    border: 3px solid var(--bg);
-  }
-
-  .when {
-    margin: 0 0 2px;
-    color: var(--muted);
-    font-size: 0.92rem;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-
-  .timeline h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    line-height: 1.25;
-  }
-
-  .role {
-    margin: 2px 0 10px;
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .timeline ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-
-  .timeline ul li { margin-bottom: 6px; }
-
-  .timeline p { margin: 0 0 6px; }
-
-  .label { font-weight: 700; }
-
-  /* Leadership grid */
-  .grid2 {
-    display: grid;
-    gap: 12px;
-  }
-
-  .grid2 h3 {
-    margin: 0;
-    font-size: 1.15rem;
-    line-height: 1.25;
-  }
-
-  .grid2 .role { margin-bottom: 8px; }
-
-  .grid2 p:last-child { margin: 0; }
-
-  /* Skills */
-  .skillgroup { margin-bottom: 18px; }
-
-  .skillgroup:last-child { margin-bottom: 0; }
-
-  .skillgroup h3 {
-    margin: 0 0 8px;
-    font-size: 1.1rem;
-  }
-
+  /* Interests */
   .tags {
     list-style: none;
     margin: 0;
@@ -373,28 +261,6 @@
     border-radius: 999px;
     padding: 5px 14px;
     font-size: 0.98rem;
-  }
-
-  /* Letter */
-  .letter { padding: 24px 22px; }
-
-  .letter .opening {
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-
-  details summary {
-    cursor: pointer;
-    color: var(--accent);
-    font-weight: 700;
-    padding: 4px 0;
-  }
-
-  details[open] summary { margin-bottom: 14px; }
-
-  .signoff {
-    margin: 18px 0 0;
-    font-style: italic;
   }
 
   /* Contact */
@@ -431,24 +297,20 @@
   }
 
   @media (min-width: 700px) {
-    header { padding: 72px 0 96px; }
+    header { padding: 72px 0 80px; }
     nav .wrap { gap: 26px; }
-    .facts { grid-template-columns: repeat(4, 1fr); gap: 14px; }
-    .grid3 { grid-template-columns: repeat(3, 1fr); }
-    .grid2 { grid-template-columns: 1fr 1fr; }
     .card { padding: 24px; }
-    .letter { padding: 34px 38px; }
+    .stories { grid-template-columns: 1fr 1fr; }
+    .about { padding: 34px 38px; }
     section { padding-top: 56px; }
   }
 
   @media print {
-    nav, .actions, details summary { display: none; }
+    nav, .actions { display: none; }
     body { background: #fff; font-size: 12pt; }
     header, .contact { background: none; color: #000; padding: 0 0 12pt; }
     .lede, .contact p, .chips li, .title { color: #000; }
-    .facts { margin-top: 0; }
-    .card, .facts li { box-shadow: none; }
-    details > * { display: block; }
+    .card { box-shadow: none; }
   }
 </style>
 </head>
@@ -457,10 +319,9 @@
 <nav aria-label="Sections">
   <div class="wrap">
     <a class="brand" href="#top">Spencer Riley</a>
-    <a class="link" href="#experience">Experience</a>
-    <a class="link" href="#education">Education</a>
-    <a class="link" href="#skills">Skills</a>
-    <a class="link" href="#motivation">Motivation</a>
+    <a class="link" href="#about">About</a>
+    <a class="link" href="#stories">Stories</a>
+    <a class="link" href="#interests">Interests</a>
     <a class="link" href="#contact">Contact</a>
   </div>
 </nav>
@@ -469,8 +330,8 @@
   <div class="wrap">
     <div class="monogram" aria-hidden="true">SR</div>
     <h1>Spencer Riley</h1>
-    <p class="title">M.A. Marketing Management candidate, University of St. Gallen (HSG)</p>
-    <p class="lede">I turn customer research into brand positioning and competitive strategy, with a background in strategy, entrepreneurship and leadership.</p>
+    <p class="title">Marketing student at the University of St. Gallen (HSG)</p>
+    <p class="lede">Raised in Switzerland, educated on both sides of the Atlantic, and curious about why people choose what they choose.</p>
     <ul class="chips">
       <li>St. Gallen, Switzerland</li>
       <li>English &middot; French &middot; Spanish</li>
@@ -485,198 +346,56 @@
 
 <main class="wrap">
 
-  <ul class="facts">
-    <li><strong>500+</strong><span>customer discovery interviews</span></li>
-    <li><strong>60+</strong><span>stakeholder interviews</span></li>
-    <li><strong>6</strong><span>competitors benchmarked for John Deere</span></li>
-    <li><strong>3</strong><span>languages spoken</span></li>
-  </ul>
+  <section id="about">
+    <h2>About Spencer</h2>
+    <div class="card about">
+      <p class="opening">Some people are comfortable in one world. Spencer moves between several: three passports, three languages, two continents, and a habit of getting complete strangers to tell him what they really think.</p>
+      <p>He grew up in French-speaking Switzerland, came of age racing skis in the Alps, and then crossed the Atlantic to study business in Colorado. Now he is back in Switzerland at the University of St. Gallen, one of Europe's top business schools, chasing the question that has followed him everywhere: why do people choose what they choose?</p>
+      <p>He doesn't guess at the answer. He goes and asks, again and again, until the pattern shows up.</p>
+    </div>
+  </section>
 
-  <section id="profile">
-    <h2>What I Bring</h2>
-    <div class="grid3">
+  <section id="stories">
+    <h2>A Few Stories</h2>
+    <div class="stories">
       <div class="card">
-        <h3>Customer research</h3>
-        <p>Mixed-methods research with surveys, interviews and digital and social listening to uncover purchase drivers.</p>
+        <h3>The startup that wouldn't sit still</h3>
+        <p>Tasked with building a company from nothing, Spencer's team watched their idea change again and again. Each time, they went back to customers, more than 500 conversations in the end. By the final pitch he had run the numbers, chased the manufacturer quotes, and knew where every figure came from.</p>
       </div>
       <div class="card">
-        <h3>Brand &amp; strategy</h3>
-        <p>Analytical, research-driven work on brand positioning, competitive strategy, product innovation and responsible AI.</p>
+        <h3>Briefing the people who keep secrets</h3>
+        <p>On a project for U.S. national security partners, he helped design a way to audit AI hiring tools for hidden bias, then presented it to an audience that does not impress easily. He also learned when to keep his mouth shut.</p>
       </div>
       <div class="card">
-        <h3>People &amp; communication</h3>
-        <p>A charismatic people person with an international upbringing and strong cross-cultural communication.</p>
+        <h3>Following the money up the Himalayas</h3>
+        <p>As a volunteer for a Swiss foundation, he didn't stop at the fundraising gala. He trekked the Khumbu Valley in Nepal and visited projects in Bhutan to see with his own eyes that the money had turned into homes.</p>
+      </div>
+      <div class="card">
+        <h3>Discipline, Swiss edition</h3>
+        <p>He completed his initial training with the Swiss Armed Forces, where teamwork and resilience are requirements, not nice-to-haves.</p>
+      </div>
+      <div class="card">
+        <h3>Trusted with other people's kids</h3>
+        <p>Three summers as a group leader in the Swiss mountains, in charge of students from 8 to 16. Parents trusted him, the kids liked him, and everyone came home.</p>
+      </div>
+      <div class="card">
+        <h3>The room he was made for</h3>
+        <p>Pitching an idea, winning someone's trust quickly, bringing a room along with him. Wherever Spencer goes, people tend to end up on his side.</p>
       </div>
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <ol class="timeline">
-      <li>
-        <p class="when">09/2026 &ndash; Current &middot; St. Gallen, CH</p>
-        <h3>John Deere</h3>
-        <p class="role">Applied Research Project, Student Consultant</p>
-        <ul>
-          <li>Researching brand awareness, perceptions and dealer experience across small farms, contractors and large farms, benchmarked against six key competitors (Fendt, CNH, Claas, Amazone, Deutz, Horsch).</li>
-          <li>Applying quantitative surveys, qualitative interviews and digital and social listening to uncover purchase drivers and differentiation opportunities across customer segments.</li>
-          <li>Working directly with John Deere stakeholders and HSG faculty to turn the research into an actionable, customer-driven brand positioning strategy.</li>
-        </ul>
-      </li>
-      <li>
-        <p class="when">01/2024 &ndash; 08/2024 &middot; Aurora, Colorado, USA</p>
-        <h3>National Security Agency</h3>
-        <p class="role">Defence Solutions Student Consultant</p>
-        <ul>
-          <li>Applied Lean Startup methods and conducted 60+ interviews across DSAs, ROTC cadets and NSA stakeholders to identify user needs, pain points and messaging gaps across three problem-statement iterations.</li>
-          <li>Authored a proposal for CULPER, an algorithmic and organizational auditing framework to detect and mitigate implicit bias in AI hiring tools, grounded in EEOC and AI-legislation research.</li>
-          <li>Delivered findings and recommendations to U.S. national security partners through presentations, structured storytelling and a formal written proposal.</li>
-        </ul>
-      </li>
-      <li>
-        <p class="when">01/2024 &ndash; 08/2024 &middot; Colorado, USA</p>
-        <h3>New Venture Creation, Startup Incubator</h3>
-        <p class="role">New Venture Student</p>
-        <ul>
-          <li>Conducted 500+ structured customer discovery interviews to test and validate business hypotheses, directly informing go-to-market recommendations.</li>
-          <li>Synthesized market research into positioning and business model recommendations, including pricing and customer segmentation strategy.</li>
-        </ul>
-      </li>
-      <li>
-        <p class="when">09/2022 &ndash; 12/2022 &middot; Broomfield, Colorado, USA</p>
-        <h3>Omni Interlocken Hotel</h3>
-        <p class="role">Business Consultant</p>
-        <ul>
-          <li>Co-led a team of four and served as marketing and outreach director.</li>
-          <li>Ran a focus group with 120 participants to gather customer feedback and perception insights.</li>
-          <li>Designed and launched an internship program to boost employer branding and retention.</li>
-        </ul>
-      </li>
-    </ol>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ol class="timeline">
-      <li>
-        <p class="when">09/2026 &ndash; Current &middot; St. Gallen, Switzerland</p>
-        <h3>University of St. Gallen</h3>
-        <p class="role">M.A. Marketing Management (MiMM HSG)</p>
-        <p><span class="label">Courses:</span> Consumer Behaviour &amp; Methods, The Future of Brand Management, Marketing Management</p>
-        <p><span class="label">Extracurriculars:</span> AI in Management Club, MiMM Community Member</p>
-      </li>
-      <li>
-        <p class="when">08/2021 &ndash; 05/2025 &middot; Boulder, Colorado, USA</p>
-        <h3>University of Colorado, Leeds School of Business</h3>
-        <p class="role">B.S.B.A. Business Administration, emphasis in Leadership Management and Strategy &amp; Entrepreneurship</p>
-        <p><span class="label">Courses:</span> Design for Defence, New Venture Creation, Critical Leadership Skills, Competitive Strategy</p>
-        <p><span class="label">Additional:</span> Minor in Space, Certificate in Social Responsibility &amp; Ethics</p>
-      </li>
-      <li>
-        <p class="when">08/2016 &ndash; 05/2021 &middot; Switzerland</p>
-        <h3>Aiglon College</h3>
-        <p class="role">International Baccalaureate, final score 38/45</p>
-        <p><span class="label">Activities:</span> Vice-Captain of Belvedere House, Varsity Ski Team, Astronomy Club Ambassador</p>
-      </li>
-    </ol>
-  </section>
-
-  <section id="skills">
-    <h2>Skills &amp; Languages</h2>
+  <section id="interests">
+    <h2>Outside the Classroom</h2>
     <div class="card">
-      <div class="skillgroup">
-        <h3>Languages</h3>
-        <ul class="tags">
-          <li>English (mother tongue)</li>
-          <li>French (fluent)</li>
-          <li>Spanish (B1)</li>
-        </ul>
-      </div>
-      <div class="skillgroup">
-        <h3>Marketing &amp; strategy</h3>
-        <ul class="tags">
-          <li>Market research</li>
-          <li>Brand positioning</li>
-          <li>Strategic analysis</li>
-          <li>Customer journey analysis</li>
-          <li>Content &amp; messaging development</li>
-          <li>KPI tracking</li>
-        </ul>
-      </div>
-      <div class="skillgroup">
-        <h3>Working style</h3>
-        <ul class="tags">
-          <li>Project management</li>
-          <li>Data synthesis</li>
-          <li>Cross-functional collaboration</li>
-          <li>Communication &amp; presentation</li>
-        </ul>
-      </div>
-      <div class="skillgroup">
-        <h3>IT</h3>
-        <ul class="tags">
-          <li>MS Office Suite (advanced)</li>
-          <li>Basic SQL &amp; Python</li>
-          <li>Basic AI literacy</li>
-        </ul>
-      </div>
-      <div class="skillgroup">
-        <h3>Interests</h3>
-        <ul class="tags">
-          <li>Weightlifting</li>
-          <li>Road cycling</li>
-          <li>Hiking</li>
-          <li>Mountaineering</li>
-          <li>Ski racing</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="leadership">
-    <h2>Leadership &amp; Community</h2>
-    <div class="grid2">
-      <div class="card">
-        <h3>Himalayan Foundation Switzerland</h3>
-        <p class="role">Event Assistant Manager &amp; Volunteer</p>
-        <p>Managed an auction for 200+ guests, inspected housing projects in Bhutan, and trekked the Khumbu Valley in Nepal to verify fund allocation for 500 homes.</p>
-      </div>
-      <div class="card">
-        <h3>Alpha Kappa Psi Business Fraternity</h3>
-        <p class="role">Master of Rituals &amp; Brother Member</p>
-        <p>Completed 150+ hours of professional development and managed a community charity campaign for local meal-delivery programs.</p>
-      </div>
-      <div class="card">
-        <h3>Aiglon College Summer School</h3>
-        <p class="role">Group Leader, Villars-sur-Ollon</p>
-        <p>Supervised students aged 8 to 16 over three summers, led daily activities and excursions, and acted as a liaison between students, faculty and parents.</p>
-      </div>
-      <div class="card">
-        <h3>Conference on World Affairs</h3>
-        <p class="role">Committee Member, Boulder</p>
-        <p>Produced a seven-month planning outline for a four-day conference and coordinated speaker relations for 25 international panellists.</p>
-      </div>
-      <div class="card">
-        <h3>Swiss Armed Forces</h3>
-        <p class="role">Cannonier / Mortier, Compagnie 4</p>
-        <p>Completed initial military training in a structured and highly disciplined environment, developing teamwork, resilience and operational readiness.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="motivation">
-    <h2>Letter of Motivation</h2>
-    <div class="card letter">
-      <p class="opening">I chose a Master's in Marketing Management because I am fascinated by the "why" behind purchase decisions. The fastest way I have found to get to that "why" is to ask people, so most of my projects have been built on conversations.</p>
-      <details>
-        <summary>Read the full letter</summary>
-        <p>In New Venture Creation at CU Boulder, my team and I had to build a startup from scratch. Our idea kept changing over and over again, and every time it did we went back to customers, more than 500 interviews in the end. Once we landed on MOXY, a refillable fragrance product that keeps any perfume's scent all day, those interviews told us what people spend on perfume in a year and what they would be willing to pay for ours. I took on the finances, sent renders of our prototype to manufacturers for quotes, and reworked the pitch each time a new quote moved our margins. By our final pitch I knew where every figure came from.</p>
-        <p>I did similar work on a project sponsored by the National Security Agency, where our team ran more than 60 stakeholder interviews and proposed CULPER, a framework to audit AI hiring tools for bias. I also learned to be careful with information that isn't mine to share.</p>
-        <p>At St. Gallen I am now working on a research project for John Deere, looking at how the brand is perceived against six competitors. Part of it means testing how AI assistants rank tractor brands when a farmer asks them for advice, which is a question I didn't expect to find so interesting. I prepared the cost proposal for the field research across four countries, and I can now tell you that a three day ticket to an Irish farm machinery show costs &euro;45.</p>
-        <p>What I enjoy most is the people: pitching an idea, building trust quickly, and bringing people along. I grew up in French speaking Switzerland, attended Aiglon College, and studied in the United States, so I build relationships easily across cultures. I like the moment when someone trusts you enough to tell you what they really think, and I'd like to build a career around earning that trust.</p>
-        <p>If that sounds like someone your team could use, I would be glad to talk.</p>
-        <p class="signoff">Spencer Riley</p>
-      </details>
+      <ul class="tags">
+        <li>Ski racing</li>
+        <li>Mountaineering</li>
+        <li>Hiking</li>
+        <li>Road cycling</li>
+        <li>Weightlifting</li>
+        <li>Astronomy</li>
+      </ul>
     </div>
   </section>
 
@@ -684,8 +403,8 @@
 
 <div class="contact" id="contact">
   <div class="wrap">
-    <h2>Let's Talk</h2>
-    <p>I am open to conversations about internships and graduate roles. The best way to reach me is on LinkedIn or by email.</p>
+    <h2>Say Hello</h2>
+    <p>The best way to reach me is on LinkedIn or by email.</p>
     <div class="actions">
       <a class="button" href="https://www.linkedin.com/in/rileyspencer/" target="_blank" rel="noopener">Connect on LinkedIn</a>
       <a class="button ghost" href="mailto:spencer.blum.riley@gmail.com">spencer.blum.riley@gmail.com</a>

@@ -232,18 +232,21 @@
     line-height: 1.5;
   }
 
-  /* Stories */
-  .stories {
+  /* Info */
+  .info {
+    margin: 0;
     display: grid;
-    gap: 12px;
+    gap: 14px;
   }
 
-  .stories h3 {
-    margin: 0 0 6px;
-    font-size: 1.2rem;
-    line-height: 1.25;
-    color: var(--accent);
+  .info dt {
+    color: var(--muted);
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
+
+  .info dd { margin: 0; }
 
   /* Interests */
   .tags {
@@ -300,7 +303,7 @@
     header { padding: 72px 0 80px; }
     nav .wrap { gap: 26px; }
     .card { padding: 24px; }
-    .stories { grid-template-columns: 1fr 1fr; }
+    .info { grid-template-columns: 1fr 1fr; }
     .about { padding: 34px 38px; }
     section { padding-top: 56px; }
   }
@@ -320,7 +323,7 @@
   <div class="wrap">
     <a class="brand" href="#top">Spencer Riley</a>
     <a class="link" href="#about">About</a>
-    <a class="link" href="#stories">Stories</a>
+    <a class="link" href="#info">Info</a>
     <a class="link" href="#interests">Interests</a>
     <a class="link" href="#contact">Contact</a>
   </div>
@@ -355,33 +358,19 @@
     </div>
   </section>
 
-  <section id="stories">
-    <h2>A Few Stories</h2>
-    <div class="stories">
-      <div class="card">
-        <h3>The startup that wouldn't sit still</h3>
-        <p>Tasked with building a company from nothing, Spencer's team watched their idea change again and again. Each time, they went back to customers, more than 500 conversations in the end. By the final pitch he had run the numbers, chased the manufacturer quotes, and knew where every figure came from.</p>
-      </div>
-      <div class="card">
-        <h3>Briefing the people who keep secrets</h3>
-        <p>On a project for U.S. national security partners, he helped design a way to audit AI hiring tools for hidden bias, then presented it to an audience that does not impress easily. He also learned when to keep his mouth shut.</p>
-      </div>
-      <div class="card">
-        <h3>Following the money up the Himalayas</h3>
-        <p>As a volunteer for a Swiss foundation, he didn't stop at the fundraising gala. He trekked the Khumbu Valley in Nepal and visited projects in Bhutan to see with his own eyes that the money had turned into homes.</p>
-      </div>
-      <div class="card">
-        <h3>Discipline, Swiss edition</h3>
-        <p>He completed his initial training with the Swiss Armed Forces, where teamwork and resilience are requirements, not nice-to-haves.</p>
-      </div>
-      <div class="card">
-        <h3>Trusted with other people's kids</h3>
-        <p>Three summers as a group leader in the Swiss mountains, in charge of students from 8 to 16. Parents trusted him, the kids liked him, and everyone came home.</p>
-      </div>
-      <div class="card">
-        <h3>The room he was made for</h3>
-        <p>Pitching an idea, winning someone's trust quickly, bringing a room along with him. Wherever Spencer goes, people tend to end up on his side.</p>
-      </div>
+  <section id="info">
+    <h2>A Bit About Me</h2>
+    <div class="card">
+      <dl class="info">
+        <div><dt>Grew up</dt><dd>French-speaking Switzerland</dd></div>
+        <div><dt>School</dt><dd>Aiglon College, in the Swiss Alps</dd></div>
+        <div><dt>Undergrad</dt><dd>Business at the University of Colorado Boulder</dd></div>
+        <div><dt>Now</dt><dd>Master's in Marketing Management at the University of St. Gallen</dd></div>
+        <div><dt>Languages</dt><dd>English, French and some Spanish</dd></div>
+        <div><dt>Passports</dt><dd>USA, Switzerland and Australia</dd></div>
+        <div><dt>Been to</dt><dd>The Khumbu Valley in Nepal and Bhutan, volunteering for a Swiss foundation</dd></div>
+        <div><dt>Curious about</dt><dd>Why people choose what they choose</dd></div>
+      </dl>
     </div>
   </section>
 
@@ -414,6 +403,7 @@
 
 <footer>
   <div class="wrap">Spencer Riley</div>
+  <div class="wrap">Last updated 14 October 2026</div>
 </footer>
 
 </body>
